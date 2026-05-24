@@ -1,0 +1,15 @@
+{
+  "devDependencies": {
+    "@types/node": "^25.0.3",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "mqtt": "^5.14.1",
+    "weathercloud-js": "^1.0.2"
+  },
+  "type": "module",
+  "scripts": {
+    "builddev": "cd node_modules/weathercloud-js && npm run build",
+    "dev": "nodemon src/weathercloud-to-hass.ts"
+  }
+}
